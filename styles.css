@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  #terminal {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: lime;
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 14px;
+    line-height: 1.5em;
+  }
+  
+  .cursor {
+    background-color: lime;
+    display: inline-block;
+    width: 14px; /* Set the width to the size of a letter */
+    height: 14px; /* Set the height to the size of a letter */
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 49% {
+      background-color: lime;
+    }
+    50%, 100% {
+      background-color: transparent;
+    }
+  }
+  
+  .input-field {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 80%;
+    display: block;
+  }
+  
+  /* New styles for the input field's cursor */
+  .input-field::selection {
+    background-color: lime;
+  }
+  
+  .input-field::-moz-selection {
+    background-color: lime;
+  }
+  
+  .input-field::caret-color {
+    color: lime;
+  }
+  

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+.portfolio-container {
+    display: flex;
+    height: 100%;
+    padding: 14px;
+  }
+  
+  .file-structure {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: lime;
+    line-height: 1.5em;
+  }
+  
+  .folder {
+    font-weight: bold;
+  }
+  
+  .main-category {
+    color: green;
+    font-size: 2em; /* h1 size */
+  }
+  
+  .indent {
+    padding-left: 20px;
+  }
+  
+  .line, .branch {
+    color: white; /* change the line color to white */
+  }
+  
+  .file {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .file:hover {
+    text-decoration: underline;
+  }
+  
